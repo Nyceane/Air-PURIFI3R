@@ -1,0 +1,190 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "air purifier",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AirQualityIntent",
+                    "slots": [],
+                    "samples": [
+                        "How is the Air Quality",
+                        "Check the air quality",
+                        "What's the air quality like"
+                    ]
+                },
+                {
+                    "name": "TemperatureIntent",
+                    "slots": [
+                        {
+                            "name": "Unit",
+                            "type": "UnitType"
+                        }
+                    ],
+                    "samples": [
+                        "What's the temperature",
+                        "Check the temperature",
+                        "What's the temperature in {Unit}",
+                        "Check the temperature in {Unit}"
+                    ]
+                },
+                {
+                    "name": "SetSpeedIntent",
+                    "slots": [
+                        {
+                            "name": "Speed",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "set speed {Speed} percent",
+                        "set {Speed} percent speed",
+                        "set speed to {Speed} percent"
+                    ]
+                },
+                {
+                    "name": "SetModeIntent",
+                    "slots": [
+                        {
+                            "name": "Mode",
+                            "type": "ModeType"
+                        }
+                    ],
+                    "samples": [
+                        "Set to {Mode} mode",
+                        "Set to {Mode}"
+                    ]
+                },
+                {
+                    "name": "AutoIntent",
+                    "slots": [
+                        {
+                            "name": "OnOff",
+                            "type": "OnOffType"
+                        }
+                    ],
+                    "samples": [
+                        "Turn {OnOff} auto filter",
+                        "Turn {OnOff} auto",
+                        "Turn {OnOff} auto mode"
+                    ]
+                },
+                {
+                    "name": "YesNoIntent",
+                    "slots": [
+                        {
+                            "name": "YesNo",
+                            "type": "yesNoType"
+                        }
+                    ],
+                    "samples": [
+                        "{YesNo}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "OnOffType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "on"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "off"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "UnitType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "celsius"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fahrenheit"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ModeType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "high"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "medium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "low"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "off"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "yesNoType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "yes",
+                                "synonyms": [
+                                    "yep",
+                                    "yeah",
+                                    "I do",
+                                    "yes please",
+                                    "you know it",
+                                    "I would"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "no",
+                                "synonyms": [
+                                    "no",
+                                    "no thanks",
+                                    "nope",
+                                    "I do not",
+                                    "no thank you",
+                                    "don't"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
